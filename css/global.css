@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+:root {
+  --color-principal: #f6f7fb; /*60%*/
+  --color-secundari: #004d98;/*30%*/
+  --color-accent: #a50044;/*10%*/
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--color-principal);
+  background: var(--color-primario);
+}
+
+header {
+  background:var(--color-secundari);
+  color: var(--color-primario);
+  padding: 24px 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around
+  ;
+  align-items: center;
+}
+
+header h1 {
+  color: var(--color-principal);
+  margin-bottom: 12px;
+}
+
+
+ 
+nav a {
+  color:var(--color-principal);
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+nav a:focus {
+  border-bottom-color: var(--color-accent);
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: var(--color-secundari);
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 6px;
+}
+
+section h2 {
+  margin-bottom: 12px;
+  color: var(--color-principal)
+}
+
+
+footer {
+  background-color: var(--color-secundari);;
+  text-align: center;
+  padding: 20px;
+  color: var(--color-principal);
+  font-size: 0.9rem;
+}
