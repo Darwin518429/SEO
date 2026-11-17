@@ -1,0 +1,51 @@
+h1 {
+    color: var(--color-secundari);
+}
+
+/* Layout tipus article: imatge + text al costat */
+.article-content {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-top: 12px;
+}
+
+.article-content figure {
+    flex: 0 0 280px;
+    margin: 0;
+}
+
+.article-content img {
+    width: 100%;
+    height: 200px;          /* Totes les imatges tindran la mateixa alçada */
+    object-fit: cover;      /* Retalla la imatge perquè no es deformi */
+    border-radius: 6px;
+    display: block;
+}
+
+.article-content figcaption {
+    font-size: 0.85rem;
+    margin-top: 6px;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.article-content .text {
+    flex: 1;
+}
+
+/* Responsive: a mòbil es posen un sota l’altre */
+@media (max-width: 700px) {
+    .article-content {
+        flex-direction: column;
+    }
+
+    .article-content figure {
+        flex: none;
+        width: 100%;
+    }
+
+    .article-content img {
+        height: 220px;      /* Una mica més alta a mòbil */
+    }
+}
