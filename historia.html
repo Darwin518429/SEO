@@ -15,14 +15,24 @@
 </head>
 <body>
     <header>
-        <p class="site-title">Barcelona</p>
-        <nav>
-          <a href="index.html">Inici</a>
-          <a href="barris.html">Barris destacats</a>
-          <a href="historia.html">Història</a>
-          <a href="locals.html">Locals</a>
-        </nav>
-    </header>
+     <h1>Barcelona</h1>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-toggle" aria-label="Obrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav aria-label="Menú principal">
+        <ul>
+            <li><a href="index.html" aria-current="page">Inici</a></li>
+            <li><a href="barris.html">Barris destacats</a></li>
+            <li><a href="historia.html">Història</a></li>
+            <li><a href="locals.html">Locals</a></li>
+        </ul>
+  </header>
     <main>
         <h1>Historia de la ciudad</h1>
 
@@ -32,39 +42,51 @@
 
             <li>
                 <h3>Los primeros habitantes</h3>
-                <img src="./images/primer-habitant.jpg" alt="Barcelona hace 7500 años" width="300">
+                <picture>
+                    <source srcset="./images/primer-habitant.webp" type="image/webp">
+                    <img src="./images/primer-habitant.jpg" alt="Barcelona hace 7500 años" width="300">
+                </picture>
                 <p>Los primeros habitantes de Barcelona fueron los ibéricos, seguidos por los romanos que fundaron la ciudad en el siglo II a.C.</p>
             </li>
             <li>
                 <h3>La época romana</h3>
-                <img src="./images/epoca-romana.jpg" alt="Barcelona en la época romana" width="300">
+                <picture>
+                    <source srcset="./images/epoca-romana.webp" type="image/webp">
+                    <img src="./images/epoca-romana.jpg" alt="Barcelona en la época romana" width="300">
+                </picture>
                 <p>Durante la época romana, Barcelona se convirtió en un importante centro comercial y militar, con una muralla que protegía la ciudad.</p>
             </li>
             <li>
                 <h3>La Barcelona medieval</h3>
-                <img src="./images/barcelona-medieval.webp" alt="Barcelona en la época medieval" width="300">
+                <picture>
+                    <source srcset="./images/barcelona-medieval.webp" type="image/webp">
+                    <img src="./images/barcelona-medieval.jpg" alt="Barcelona en la época medieval" width="300">
+                </picture>
                 <p>Durante la época medieval, Barcelona se desarrolló como un importante centro económico y cultural, con el crecimiento de su población y la construcción de importantes edificios religiosos y civiles.</p>
             </li>
             <li>
                 <h3>La Barcelona moderna</h3>
-                <img src="./images/barcelona-moderna.jpg" alt="Barcelona en la época moderna" width="300">
+                <picture>
+                    <source srcset="./images/barcelona-moderna.webp" type="image/webp">
+                    <img src="./images/barcelona-moderna.jpg" alt="Barcelona en la época moderna" width="300">
+                </picture>
                 <p>En la época moderna, Barcelona experimentó un gran crecimiento industrial y urbanístico, con la construcción de nuevos barrios y la modernización de su infraestructura.</p>
             </li>
         </section>
 
         <section>
             <h2>Evolución histórica</h2>
-            <p>Contenido sobre su evolución...</p>
+            <p> La evolución de Barcelona a lo largo de los siglos refleja su importancia como centro cultural, económico y político en la Península Ibérica.</p>
         </section>
 
         <section>
             <h2>Acontecimientos importantes</h2>
-            <p>Contenido sobre los acontecimientos...</p>
+            <p>Barcelona ha vivido numerosos acontecimientos que han marcado su historia, desde la fundación de la ciudad hasta los eventos más recientes.</p>
         </section>
 
         <section>
             <h2>Patrimonio histórico</h2>
-            <p>Contenido sobre los monumentos...</p>
+            <p>Barcelona cuenta con un rico patrimonio histórico que incluye edificios, monumentos y lugares de interés cultural.</p>
         </section>
     </main>
 
