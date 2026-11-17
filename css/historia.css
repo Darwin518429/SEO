@@ -78,3 +78,18 @@ h1{
         grid-template-columns: 1fr;
     }
 }
+
+.evolucio-historica p{
+    display: none;
+}
+
+.evolucio-historica h3{
+    cursor: pointer;
+}
+
+.evolucio-historica h3:hover{
+    color: var(--color-accent);
+}
+.evolucio-historica h3:hover + p{
+    display: block;
+} 
