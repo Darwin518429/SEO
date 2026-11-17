@@ -1,3 +1,4 @@
+
 .tarjetas {
   list-style: none;
   display: flex;
@@ -7,9 +8,10 @@
 
 .tarjetas li {
   flex: 1 1 220px;
-  border: 1px solid #ccc;
+  border: var( --color-principal) solid 1px;
   border-radius: 6px;
   padding: 16px;
+  background-color: var(--color-accent);
 }
 
 .tarjetas h3 {
@@ -24,7 +26,7 @@
 }
 
 .tarjetas li picture{
-    display: block;
+  display: block;
   width:100%;
   height: 150px;
  
@@ -35,3 +37,4 @@
     object-fit: cover;
     border-radius: 6px;
 }
+

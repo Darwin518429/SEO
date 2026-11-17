@@ -16,8 +16,14 @@
   font-size: 1rem;
 }
 
-h1{font-size: 1.8rem;}
-h2{font-size: 1.125rem;}
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -48,11 +54,12 @@ header h1 {
 }
 
 /* Navegacio */
-nav {
+nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  list-style: none;
 }
 
 nav a {
@@ -103,12 +110,24 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Menú hamburguesa */
+#menu-toggle {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.menu-toggle {
+  display: none;
+}
 
 /* Tablets y móviles */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
     padding: 20px 15px;
   }
 
@@ -117,8 +136,42 @@ footer {
     font-size: 1.6rem;
   }
 
-  nav {
+  /* Botón hamburguesa */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-principal);
+    border-radius: 3px;
+  }
+
+  #menu-toggle:focus-visible+.menu-toggle {
+    outline: 2px solid var(--color-principal);
+    outline-offset: 5px;
+  }
+
+  /* Menú desplegable */
+  header nav {
+    display: none;
+    flex-basis: 100%;
+  }
+
+  #menu-toggle:checked~nav {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
     gap: 12px;
+    text-align: center;
   }
 
   main {
@@ -138,7 +191,7 @@ footer {
     font-size: 1.4rem;
   }
 
-  nav {
+  nav ul {
     flex-direction: column;
     gap: 8px;
   }

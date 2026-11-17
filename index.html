@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>La meva ciutat</title>
   <!-- Descripcio de la pagina web quan es navega -->
-  <meta name="description" content="Descobreix Barcelona: descripció, barris destacats, història i locals d'interès.">
+  <meta name="description" content="Descobreix Barcelona, la seva arquitectura modernista, els monuments més emblemàtics, els barris històrics, les platges i la seva oferta cultural i gastronòmica.">
 
   <!-- Arxius  per anar a buscar els robots  -->
   <meta name="robots" content="index, follow">
@@ -19,33 +19,42 @@
 <body>
 
   <header>
-    <h1>Barcelona</h1>
-    <nav>
-      <a href="index.html">Inici</a>
-      <a href="barris.html">Barris destacats</a>
-      <a href="historia.html">Història</a>
-      <a href="locals.html">Locals</a>
-    </nav>
+     <h1>Barcelona</h1>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-toggle" aria-label="Obrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav aria-label="Menú principal">
+        <ul>
+            <li><a href="index.html" aria-current="page">Inici</a></li>
+            <li><a href="barris.html">Barris destacats</a></li>
+            <li><a href="historia.html">Història</a></li>
+            <li><a href="locals.html">Locals</a></li>
+        </ul>
   </header>
 
   <main>
     <section>
       <h2>Introducció</h2>
       <p>
-        Benvingut a la pàgina dedicada a la nostra ciutat. Aquí trobaràs una
-        visió general de com és, què la fa especial i per què val la pena
-        conèixer-la.
+          Barcelona és una de les destinacions més destacades de Catalunya,
+          coneguda per la seva arquitectura modernista, la seva riquesa
+          cultural i la seva ubicació al costat del mar Mediterrani.
+          Els seus carrers acullen monuments emblemàtics, barris amb
+          personalitat pròpia i una gran varietat d'espais culturals.
+          <br/><br/>
+          A més, la seva gastronomia, les platges i les nombroses
+          activitats d'oci la converteixen en un lloc ideal per descobrir
+          la història, les tradicions i l'essència de la ciutat.
       </p>
     </section>
 
-    <section>
-      <h2>Descripció</h2>
-      <p>
-        Escriu aquí una descripció de la ciutat: on està situada, quants
-        habitants té, quin clima fa, a què es dedica la seva gent i quin
-        ambient es respira als seus carrers.
-      </p>
-    </section>
+   
 
     <section>
       <h2>Explora la ciutat</h2>
